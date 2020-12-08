@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFA000"
     tools:context=".createaccount">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FBC02D"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FBC02D"
             android:orientation="vertical">
 
             <LinearLayout
@@ -26,7 +29,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginRight="1dp"
                 android:layout_marginBottom="1dp"
-                android:background="#FDFDFD"
+                android:background="#EFC55D"
                 android:orientation="vertical">
 
                 <ImageView
@@ -166,6 +169,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#7B1FA2"
+                    android:onClick="gotologin"
                     android:text="CREATE ACCOUNT"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />

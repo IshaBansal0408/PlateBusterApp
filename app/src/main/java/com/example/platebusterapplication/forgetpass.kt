@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class createaccount : AppCompatActivity() {
+class forgetpass : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_createaccount)
+        setContentView(R.layout.activity_forgetpass)
     }
-    fun gotologin(view: View) {
-        val button=findViewById<Button>(R.id.button4)
+    fun nophone_email(view: View) {
+        val button=findViewById<Button>(R.id.noemail)
         button.setOnClickListener{
-            val intent= Intent(this,login::class.java)
+            val intent= Intent(this,forgetpassemail::class.java)
             startActivity(intent)
         }
     }

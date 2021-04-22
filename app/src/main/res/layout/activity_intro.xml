@@ -8,6 +8,7 @@
 
     <ImageView
         android:id="@+id/backimg"
+        android:elevation="2dp"
         android:layout_width="wrap_content"
         android:layout_height="900dp"
         android:src="@drawable/bg"
@@ -21,6 +22,7 @@
 
     <ImageView
         android:id="@+id/placeholder"
+        android:elevation="2dp"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/place"
@@ -35,6 +37,7 @@
     <ImageView
         android:id="@+id/title"
         android:layout_width="379dp"
+        android:elevation="2dp"
         android:layout_height="158dp"
         android:src="@drawable/title"
         android:scaleType="centerCrop"
@@ -48,6 +51,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/intro_splash"
         app:lottie_autoPlay="true"
+        android:elevation="2dp"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         app:layout_constraintVertical_weight="0"
@@ -56,4 +60,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <com.cuberto.liquid_swipe.LiquidPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

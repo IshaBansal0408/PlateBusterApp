@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#500606">
+    android:background="red">
+
+    <ImageView
+        android:id="@+id/p1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/pic2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_weight="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318"
+        app:layout_constraintVertical_weight="0.3" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="PlateBuster"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="0"
+        app:layout_constraintStart_toStartOf="@id/p1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809"
+        app:layout_constraintVertical_weight="0" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:text="Skip"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/t1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_weight="0"
+        app:layout_constraintStart_toStartOf="@id/t1"
+        app:layout_constraintTop_toTopOf="@id/t1"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_weight="0" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Just"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintHorizontal_weight="0.0"
+        app:layout_constraintStart_toStartOf="@id/p1"
+        app:layout_constraintTop_toBottomOf="@id/p1"
+        app:layout_constraintVertical_bias="0.022"
+        app:layout_constraintVertical_weight="0" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="One Input"
+        android:textColor="@color/white"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintHorizontal_weight="0.0"
+        app:layout_constraintStart_toStartOf="@id/p1"
+        app:layout_constraintTop_toBottomOf="@id/p1"
+        app:layout_constraintVertical_bias="0.205"
+        app:layout_constraintVertical_weight="0" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Upload or click a picture of vehicle registration plate. \n\t\t\t\t\t\t\t\t\t\t\t\t\tOR \n Simply type the vehicle registration plate number"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintHorizontal_weight="0.0"
+        app:layout_constraintStart_toStartOf="@id/p1"
+        app:layout_constraintTop_toBottomOf="@id/p1"
+        app:layout_constraintVertical_bias="0.611"
+        app:layout_constraintVertical_weight="0"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <ImageView
+        android:id="@+id/ta1"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/tab2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintHorizontal_weight="0.0"
+        app:layout_constraintStart_toStartOf="@id/p1"
+        app:layout_constraintTop_toBottomOf="@id/p1"
+        app:layout_constraintVertical_bias="0.987"
+        app:layout_constraintVertical_weight="0"
+        app:layout_constraintWidth_percent="0.6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

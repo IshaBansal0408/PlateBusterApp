@@ -35,11 +35,15 @@ public class Screen_Main extends AppCompatActivity {
 
         cam.setTranslationY(300);
         up.setTranslationY(300);
+        tabLayout.setTranslationY(300);
 
         cam.setAlpha(v);
         up.setAlpha(v);
+        tabLayout.setAlpha(v);
 
-        cam.animate()
+        cam.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(400).start();
+        up.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(600).start();
+        tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
 
     }
 }

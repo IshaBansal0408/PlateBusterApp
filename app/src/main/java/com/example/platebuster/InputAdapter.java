@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class InputAdapter extends FragmentPagerAdapter {
+
     private Context context;
     int totalTabs;
 
@@ -21,7 +22,7 @@ public class InputAdapter extends FragmentPagerAdapter {
         return totalTabs;
     }
 
-    public Fragment getItems(int position){
+    public Fragment getItem(int position){
         switch (position){
             case 0:
                 input_tab_fragment input_tab_fragment = new input_tab_fragment();

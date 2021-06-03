@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Screen_Main">
+    tools:context=".Screen_Main"
+    android:background="@color/white">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:id="@+id/imageView2"
+        android:layout_width="413dp"
+        android:layout_height="172dp"
         android:scaleType="centerCrop"
         android:src="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,76 +22,21 @@
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_weight="0" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@drawable/cus_shape1"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_camera"
+        android:layout_width="114dp"
+        android:layout_height="102dp"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="35dp"
+        android:src="@drawable/icon2"
+        app:fabCustomSize="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.78"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintVertical_weight="1">
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.7"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_weight="0" />
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:backgroundTint="@color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_weight="0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_weight="0" />
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/float_camera"
-            android:layout_width="122dp"
-            android:layout_height="100dp"
-            android:backgroundTint="@color/purple_200"
-            android:elevation="35dp"
-            android:src="@drawable/icon2"
-            app:fabCustomSize="100dp"
-            app:maxImageSize="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.688"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.966" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/float_upload"
-            android:layout_width="122dp"
-            android:layout_height="100dp"
-            android:backgroundTint="@color/purple_200"
-            android:elevation="35dp"
-            android:src="@drawable/icon1"
-            app:fabCustomSize="100dp"
-            app:maxImageSize="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.266"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.963" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.907"
+        app:maxImageSize="100dp" />
 
     <ImageView
         android:layout_width="200dp"
@@ -116,4 +63,121 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.166"
         app:layout_constraintVertical_weight="0.2" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:background="@drawable/text_style"
+        android:hint="Registration Number"
+        android:includeFontPadding="true"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514"
+        app:layout_constraintVertical_weight="0.3" />
+
+    <Button
+        android:id="@+id/enterbtn"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="@color/purple_200"
+        android:text="Confirm Registration Number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609"
+        app:layout_constraintVertical_weight="0.7"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/get_num"
+        android:layout_width="121dp"
+        android:layout_height="67dp"
+        android:background="@drawable/button_style"
+        android:backgroundTint="@color/purple_200"
+        android:text="Get Number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878"
+        app:layout_constraintVertical_weight="0.7"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="362dp"
+        android:layout_height="94dp"
+        android:elevation="30dp"
+        android:text="You can either manually type the registration plate number. Or upload an image of the registration plate from the options given below."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="334dp"
+        android:layout_height="77dp"
+        android:elevation="30dp"
+        android:text="The application will automatically send an alert to the driver stating it to remove its vehicle as soon as possible."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="367dp"
+        android:layout_height="80dp"
+        android:text="Here are some Intructions for your Help!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image_input"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.933"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

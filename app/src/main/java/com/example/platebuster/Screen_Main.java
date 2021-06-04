@@ -36,7 +36,6 @@ public class Screen_Main extends AppCompatActivity {
     EditText editText;
     ImageView inp_img;
     Intent intent;
-    String currentPhotoPath;
     float v = 0;
 
     @Nullable
@@ -69,7 +68,7 @@ public class Screen_Main extends AppCompatActivity {
         get_ans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                detectTextFromImage();
+                
             }
         });
     }

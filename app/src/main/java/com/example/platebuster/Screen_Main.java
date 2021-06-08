@@ -32,7 +32,7 @@ import java.util.Date;
 public class Screen_Main extends AppCompatActivity {
     public  static final int RequestPermissionCode  = 1 ;
     FloatingActionButton cam;
-    Button get_ans;
+    Button get_ans,send_btn;
     EditText editText;
     ImageView inp_img;
     Intent intent;
@@ -47,6 +47,7 @@ public class Screen_Main extends AppCompatActivity {
         inp_img = findViewById(R.id.image_input);
         cam = findViewById(R.id.float_camera);
         get_ans = findViewById(R.id.get_num);
+        send_btn = findViewById(R.id.enterbtn);
 
         editText.getText().clear();
         cam.setTranslationY(300);
@@ -68,9 +69,22 @@ public class Screen_Main extends AppCompatActivity {
         get_ans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                //editText.setText("TN01AS9299");
+                //editText.setText("MH12DE1433");
+                //editText.setText("CGO4MF2250");
             }
         });
+
+        send_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toastMsg("Alert is sent to the owner of the vehicle!");
+            }
+        });
+    }
+    public void toastMsg(String msg) {
+        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
+        toast.show();
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
